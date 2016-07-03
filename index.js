@@ -25,6 +25,11 @@ var api = new ParseServer({
         pfx: '/certs/DevPushExported.p12',
         bundleId: 'org.reactjs.native.example.push-notification-test',
         production: false
+      },
+      {
+        pfx: '/certs/ProdPushExported.p12', // Prod PFX or P12
+        bundleId: 'org.reactjs.native.example.push-notification-test',  
+        production: true // Prod
       }
     }
 });
