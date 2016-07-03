@@ -27,7 +27,7 @@ var api = new ParseServer({
     },
     ios: {
       pdx: './certs/DevPushExported.p12', // the path and filename to the .p12 file you exported earlier. 
-      bundleId: process.env.BUNDLE_ID || '', // The bundle identifier associated with your app
+      bundleId: 'org.reactjs.native.example.push-notification-test', // The bundle identifier associated with your app
       production: false
     }
   }
