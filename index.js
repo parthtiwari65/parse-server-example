@@ -21,16 +21,18 @@ var api = new ParseServer({
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
   push: {
-      ios: {
+      ios: [
+        {
         pfx: '/certs/DevPushExported.p12',
         bundleId: 'org.reactjs.native.example.push-notification-test',
         production: false
       },
-      ios: {
+      {
         pfx: '/certs/ProdPushExported.p12', // Prod PFX or P12
         bundleId: 'org.reactjs.native.example.push-notification-test',  
         production: true // Prod
       }
+      ]
     }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
