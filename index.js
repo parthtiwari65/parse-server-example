@@ -26,7 +26,7 @@ var api = new ParseServer({
       apiKey: '' // The Server API Key of GCM
     },
     ios: {
-      pdx: './certs/DevPushExported.p12', // the path and filename to the .p12 file you exported earlier. 
+      pfx: '/certs/DevPushExported.p12', // the path and filename to the .p12 file you exported earlier. 
       bundleId: 'org.reactjs.native.example.push-notification-test', // The bundle identifier associated with your app
       production: false
     }
