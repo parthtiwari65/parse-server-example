@@ -26,7 +26,7 @@ var api = new ParseServer({
         bundleId: 'org.reactjs.native.example.push-notification-test',
         production: false
       },
-      {
+      ios: {
         pfx: '/certs/ProdPushExported.p12', // Prod PFX or P12
         bundleId: 'org.reactjs.native.example.push-notification-test',  
         production: true // Prod
