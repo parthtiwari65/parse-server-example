@@ -21,11 +21,18 @@ var api = new ParseServer({
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
   push: {
-      ios:{
-        pfx: '/certs/DevPushExported.p12',
+      ios:[
+        {
+        pfx: __dirname + '/certs/DevPushExported.p12',
         bundleId: 'org.reactjs.native.example.push-notification-test',
         production: false
+      },
+      {
+        pfx: __dirname + '/certs/ProdPushExported.p12',
+        bundleId: 'org.reactjs.native.example.push-notification-test',
+        production: true
       }
+      ]
       
     }
 });
